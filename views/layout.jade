@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='../bower_components/materialize/dist/css/materialize.min.css')
+    link(rel='stylesheet', href='../stylesheets/style.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+  body
+    nav.yellow.darken-4
+      .nav-wrapper
+        a.brand-logo.center(href='/') #{title}
+    .container
+      block content
+
+  script(src='../bower_components/jquery/dist/jquery.js')
+  script(src='../bower_components/materialize/dist/js/materialize.js')
+  script(src='../javascripts/main.js')
